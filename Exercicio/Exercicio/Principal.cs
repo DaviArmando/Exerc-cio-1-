@@ -50,8 +50,13 @@ namespace Exercicio
                     PositivoNegativo.Run();
 
                 else if (opcao == "10")
-                    PalavrasPalindromas.Run();
-            }
-        }
+                    PalavraPalindroma.Run();
+
+                Console.WriteLine();
+                Console.Write("Pressione Alguma tecla pra continuar ...");
+				Console.ReadKey();
+                Console.Clear();
+			}
+		}
     }
 }

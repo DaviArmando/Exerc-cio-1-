@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Exercicio
 {
@@ -11,19 +12,21 @@ namespace Exercicio
             var numero_informado = Console.ReadLine();
             var numero = Convert.ToInt32(numero_informado);
             var fator = 2;
-            Console.Write($"{numero} = ");
+            var fatores = new List<int>();
+
             while (numero > 1)
             {
                 var e_divisivel = (numero % fator == 0);
                 if (e_divisivel)
                 {
-                    Console.Write($"{fator} x ");
+                    fatores.Add(fator);
                     numero = numero / fator;
                 }
                 else
                     fator++;
             }
-            Console.WriteLine($"");
+
+            Console.Write($"{numero_informado} = {string.Join(" x ", fatores)}");
         }
     }
 }

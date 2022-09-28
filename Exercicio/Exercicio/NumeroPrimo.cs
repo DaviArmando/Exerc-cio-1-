@@ -10,12 +10,12 @@ namespace Exercicio
 			Console.Write("Escreva um número : ");
 			var numero = Convert.ToInt32(Console.ReadLine());
 			var raizQuadrada = Convert.ToInt32(Math.Sqrt(numero));
-			var ehPrimo = false;
+			var ehPrimo = true;
 
-			for (var i = 2; (i < raizQuadrada) && !ehPrimo; i++)
+			for (var i = 2; (i < raizQuadrada) && ehPrimo; i++)
 			{
 				if (numero % i == 0)
-					ehPrimo = true;
+					ehPrimo = false;
 			}
 
 			if (ehPrimo)
