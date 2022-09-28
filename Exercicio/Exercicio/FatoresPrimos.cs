@@ -23,7 +23,7 @@ namespace Exercicio
                 else
                     fator++;
             }
-            Console.WriteLine($"1");
+            Console.WriteLine($"");
         }
     }
 }
